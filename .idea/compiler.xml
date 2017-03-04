@@ -22,11 +22,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="com.test" />
         <module name="com.testMoo" />
         <module name="TestMooApplication" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="com.test" target="1.5" />
       <module name="com.testMoo" target="1.5" />
       <module name="TestMooApplication" target="1.5" />
     </bytecodeTargetLevel>
