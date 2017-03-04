@@ -1,0 +1,33 @@
+
+Questions and Answers :
+
+1. What did you think of the provided acceptance criteria?
+  Ans : acceptance criteria is not written in Gherkin Given,When and Then format. Then output is not cleared.
+
+2. If this were a real story from a real life Product Owner - what questions would you ask?
+    Ans :
+    a)What should happen for empty searchTerm?
+    b)Max and min character limit for searchTerm?
+    c)Are we going to trim trailing and leading blank space?
+    d)What should be the response time sla for search feature?
+    e)What should be no of search results displayed on one page?
+    f)What should be Pagination around search results?
+    g)Whether performace check is required?
+    g)Ask the developers to write code with element identification as id.
+    h)Discuss with developers around what should be covered as part of Unit testing,API and functional.
+
+
+3. Why did you choose to structure your code in the way you did?
+      a)I have strutuctured code uisng cucumber-bdd to give flexibility to Product Owner to add any missing scenario.
+      b)It is elemented as Page Object Pattern which helps is easy navigation throughout the framework.
+
+4. If you had more time what improvements would you make to your code?
+     a) Parameterized the input attribute as a list to avoid duplicacy of writing same scenario for multiple data inputs.
+     b) Scale the configuration to run tests against multiple browser and environments.
+     c) Remove the assertion dependency from Page file i.e create separate file for constants.
+     d) Parralelization of test run.
+
+5. What is your usual approach to testing on a project? (Hint: talk about different levels of testing you would do; who would collaborate with whom etc)
+     I follow the Test Pyramid for my testing.Most tests are been covered at layer where actual business logic stays instead of UI layer. UI layer functional test will be
+     covered only for end to end journey flow.My preference to cover negative tests at Unit or API layer. Contract tests should be there for dependent service which should
+     provide frequent feedback and should be covering health check of tests.Performance testing can be covered both at API and UI layer depends on how UI heavy the application is.
